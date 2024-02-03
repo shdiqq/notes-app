@@ -65,7 +65,7 @@ function AddNotes() {
 
   const closeModalSuccessHandler = () => {
     setIsSuccess(false)
-    navigate('/notes/active');
+    navigate('/notes-app/notes/active');
   }
 
   const closeModalErrorHandler = () => {

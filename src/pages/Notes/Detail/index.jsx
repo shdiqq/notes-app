@@ -105,9 +105,9 @@ function DetailNotes() {
   const closeModalSuccessHandler = () => {
     setIsSuccess(false)
     if (currentURL.includes('archive')) {
-      navigate('/notes/archive');
+      navigate('/notes-app/notes/archive');
     } else {
-      navigate('/notes/active');
+      navigate('/notes-app/notes/active');
     }
   }
 

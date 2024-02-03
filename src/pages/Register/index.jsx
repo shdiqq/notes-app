@@ -60,7 +60,7 @@ function RegisterPage() {
 
   const closeModalSuccessHandler = () => {
     setIsSuccess(false)
-    navigate('/');
+    navigate('/notes-app');
   }
 
   const closeModalErrorHandler = () => {

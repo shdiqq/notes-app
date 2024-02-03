@@ -42,7 +42,7 @@ function DashboardPage({ userData }) {
           <div className='grid'>
             <div className='flex justify-between items-center'>
               <h2 className='font-medium text-xl'>{locale === 'id' ? `Catatan Aktif Anda` : `Your Active Notes`}</h2>
-              <Link to={'/notes/active'}>
+              <Link to={'/notes-app/notes/active'}>
                 <button className={(theme === 'light' ? 'border-gray-600 hover:bg-gray-300' : 'border-gray-400 hover:bg-gray-700') + " border font-medium rounded-lg md:text-base text-sm px-5 py-2.5"}>
                   {locale === 'id' ? 'Lihat Semua' : 'See All'}
                 </button>
@@ -61,7 +61,7 @@ function DashboardPage({ userData }) {
           <div className='grid'>
             <div className='flex justify-between items-center'>
               <h2 className='font-medium text-xl'>{locale === 'id' ? `Catatan Arsip Anda` : `Your Archive Notes`}</h2>
-              <Link to={'/notes/archive'}>
+              <Link to={'/notes-app/notes/archive'}>
                 <button className={(theme === 'light' ? 'border-gray-600 hover:bg-gray-300' : 'border-gray-400 hover:bg-gray-700') + " border font-medium rounded-lg md:text-base text-sm px-5 py-2.5"}>
                   {locale === 'id' ? 'Lihat Semua' : 'See All'}
                 </button>

@@ -67,7 +67,7 @@ function Notes( ) {
         </div>
       </div>
       {currentURL.includes('active') && 
-        <Link className='fixed right-3 bottom-3' to={"/notes/active/add"}>
+        <Link className='fixed right-3 bottom-3' to={"/notes-app/notes/active/add"}>
           <button className={(theme === 'light' ? 'border-gray-900 hover:bg-gray-400' : 'border-gray-100 hover:bg-gray-600') + " md:w-14 md:h-14 w-10 h-10 border rounded-full flex justify-center items-center"}>
             <IoMdAdd className='md:w-9 md:h-9 w-6 h-6'/>
           </button>

@@ -82,7 +82,7 @@ function LoginPage({ loginSuccess }) {
             {locale === 'id' ? 'Belum memiliki akun? ' : 'Don`t have an account yet? '}
             <Link 
               className={(theme === 'light' ? 'text-blue-700': 'text-blue-500' ) + ' cursor-pointer hover:underline'}
-              to={'/register'}>
+              to={'/notes-app/register'}>
               {locale === 'id' ? 'Mendaftar' : 'Sign up'}
             </Link>
           </div>

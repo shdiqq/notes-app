@@ -106,9 +106,9 @@ class App extends React.Component {
               </header>
               <main className="w-screen min-h-screen flex justify-center items-center">
                 <Routes>
-                  <Route path="/" element={<LoginPage loginSuccess={this.onLoginSuccess} />} />
-                  <Route path="/register" element={<RegisterPage />} />
-                  <Route path="/*" element={ <Navigate to="/" /> } />
+                  <Route path="/notes-app" element={<LoginPage loginSuccess={this.onLoginSuccess} />} />
+                  <Route path="/notes-app/register" element={<RegisterPage />} />
+                  <Route path="/notes-app/*" element={ <Navigate to="/notes-app/" /> } />
                 </Routes>
               </main>
             </div>
@@ -123,13 +123,13 @@ class App extends React.Component {
               </header>
               <main className="w-screen min-h-screen md:pl-64 pt-20">
                 <Routes>
-                  <Route path="/" element={<DashboardPage userData={this.state.authedUser}/>} />
-                  <Route path="/notes/active" element={<Notes/>}/>
-                  <Route path="/notes/active/add" element={<AddNotes/>}/>
-                  <Route path="/notes/active/:id" element={<DetailNotes/>}/>
-                  <Route path="/notes/archive" element={<Notes/>}/>
-                  <Route path="/notes/archive/:id" element={<DetailNotes/>}/>
-                  <Route path="/*" element={<NotFoundPage/>} />
+                  <Route path="/notes-app/" element={<DashboardPage userData={this.state.authedUser}/>} />
+                  <Route path="/notes-app/notes/active" element={<Notes/>}/>
+                  <Route path="/notes-app/notes/active/add" element={<AddNotes/>}/>
+                  <Route path="/notes-app/notes/active/:id" element={<DetailNotes/>}/>
+                  <Route path="/notes-app/notes/archive" element={<Notes/>}/>
+                  <Route path="/notes-app/notes/archive/:id" element={<DetailNotes/>}/>
+                  <Route path="/notes-app/*" element={<NotFoundPage/>} />
                 </Routes>
               </main>
             </div>

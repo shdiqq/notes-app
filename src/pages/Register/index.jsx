@@ -109,7 +109,7 @@ function RegisterPage() {
             {locale === 'id' ? 'Sudah memiliki akun? ' : 'Already have an account? '}
             <Link 
               className={(theme === 'light' ? 'text-blue-700': 'text-blue-500' ) + ' cursor-pointer hover:underline'}
-              to={'/login'}>
+              to={'/notes-app/'}>
               {locale === 'id' ? 'Gabung' : 'Log in'}
             </Link>
           </div>

@@ -10,7 +10,7 @@ function Card( { data, isActive } ) {
   const {locale, theme} = useContext(Context);
 
   return (
-    <Link to={isActive ? `/notes/active/${data.id}` : `/notes/archive/${data.id}`} >
+    <Link to={isActive ? `/notes-app/notes/active/${data.id}` : `/notes-app/notes/archive/${data.id}`} >
       <div className={(theme === 'light' ? 'border-gray-600 hover:bg-gray-200' : 'border-gray-400 hover:bg-gray-800') + " w-52 h-52 border rounded-xl p-3 grid content-between"}>
         <div className="grid gap-2">
           <h3 className="text-lg">{data.title}</h3>

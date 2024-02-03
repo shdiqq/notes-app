@@ -31,7 +31,7 @@ function NotFoundPage() {
           </button>
 
           <Link 
-            to="/" 
+            to="/notes-app/" 
             className={(theme === 'light' ? 'bg-blue-500 hover:bg-blue-600' : 'bg-blue-600 hover:bg-blue-500') + " w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 rounded-lg shrink-0 sm:w-auto"}>
             {locale === 'id' ? 'Bawa ke dasbor' : 'Take to dashboard'}
           </Link>

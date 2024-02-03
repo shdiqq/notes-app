@@ -28,28 +28,28 @@ function SideBar({ logOut, isOpen, sideBarHandler }) {
         <div className="grid gap-3">
           <div className="px-3 md:text-lg text-sm grid gap-4">
             <Link
-              to="/"
+              to="/notes-app/"
               className={(theme === 'light' ? 'hover:bg-gray-300' : 'hover:bg-gray-700') + " flex items-center gap-3"}
             >
               <MdDashboard className="md:w-8 md:h-8 w-6 h-8"/>
               <span>{locale === 'id' ? 'Dasbor' : 'Dashboard'}</span>
             </Link>
             <Link
-              to="/notes/active"
+              to="/notes-app/notes/active"
               className={(theme === 'light' ? 'hover:bg-gray-300' : 'hover:bg-gray-700') + " flex items-center gap-3"}
             >
               <FaNoteSticky className="md:w-8 md:h-8 w-6 h-8"/>
               <span >{locale === 'id' ? 'Catatan Aktif' : 'Active Notes'}</span>
             </Link>
             <Link
-              to="/notes/archive"
+              to="/notes-app/notes/archive"
               className={(theme === 'light' ? 'hover:bg-gray-300' : 'hover:bg-gray-700') + " flex items-center gap-3"}
             >
               <FaBoxArchive className="md:w-8 md:h-8 w-6 h-8"/>
               <span>{locale === 'id' ? 'Catatan Arsip' : 'Archive Notes'}</span>
             </Link>
             <Link
-              to="/notes/active/add"
+              to="/notes-app/notes/active/add"
               className={(theme === 'light' ? 'hover:bg-gray-300' : 'hover:bg-gray-700') + " flex items-center gap-3"}
             >
               <FaNotesMedical className="md:w-8 md:h-8 w-6 h-8"/>
